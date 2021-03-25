@@ -1,4 +1,4 @@
-# Topologic_Parse
+# Topologic-Parse
 This is for parsing JSON files for Topologic.
 
 A library to simulate DFAs and Probabilistic DFAs using context switching. This library provides a way to build and define the behavior of a graph. The client is able to define the function each vertex and edge of the graph make and how the graph transitions from one (the first valid edge) or to many states, as well as which states the graph starts in.
