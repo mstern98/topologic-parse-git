@@ -26,5 +26,6 @@ blanks          [ \t\n]+
 "mem_option"    return(MEM_OPT);
 "context"   return(LEX_CONTEXT);
 "max_loop"      return(MAX_LOOP);
+"request_flag"  return(REQ_FLAG);
 [0-9]+          {yylval.val = atoi(yytext); return(VALUE);}
 %%
