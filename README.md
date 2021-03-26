@@ -11,8 +11,6 @@ This library can be used to create AI, ML, and simulations (such as of stock opt
 
 Simply create a JSON file that looks like this!
 
-::
-
     {
         "graph" : {
             "context" : 1,
