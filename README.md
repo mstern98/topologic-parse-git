@@ -7,6 +7,36 @@ The library provides a way for the client to define what information is saved lo
 
 This library can be used to create AI, ML, and simulations (such as of stock options, electron-electron interaction, etc.).
 
+# Creating Graphs has never been easier!!
+
+Simply create a JSON file that looks like this!
+
+::
+
+    {
+        "graph" : {
+            "context" : 1,
+            "mem_option" : 1,
+            "lvl_verbose": 15,
+            "max_state": 4,
+            "max_loop": 1000,
+            "request_flag": 0,
+            "vertices" : [
+                1, 2, 3, 4, 6
+            ],
+            "edges" : {
+                "1" : 2,
+                "2" : 3
+            },
+            "bi_edges" : {
+                "1" : 4,
+                "3" : 6
+            }
+        }
+    }
+
+The JSON file always has the attributes of the graph first followed by the vertices/edges/bi_edges. The vertices are a list of id's and the edges/bi_edges define the connections between two vertices. The above JSON creates a graph with 5 vertices labeled 1, 2, 3, 4, and 6 and has edges pointing from vertex 1 to 2, and vertex 2 to 3, and also has bi directional edges between vertex 1 and 4, and vertex 3 and 6.
+
 ## Installation
 ### Arch Linux
 >yay -S topologic_parse-git
